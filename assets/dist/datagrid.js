@@ -76,6 +76,10 @@ datagridShiftGroupSelection = function() {
   last_checkbox = null;
   return document.addEventListener('click', function(e) {
     var checkboxes_rows, current_checkbox_row, el, event, i, ie, input, j, k, last_checkbox_row, last_checkbox_tbody, len, len1, len2, ref, ref1, results, row, rows;
+    if (typeof(ref) === 'undefined') {
+        return;
+    }
+    
     ref = e.path;
     for (i = 0, len = ref.length; i < len; i++) {
       el = ref[i];
